@@ -1,0 +1,134 @@
+.main{
+ padding: 50px 0; 
+}
+
+.main .card-container{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main .card-container .card{
+  width: 250px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(36, 36, 36);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.main .card-container .card h2{
+  margin-bottom: 10px;
+}
+
+.article{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px;
+  width: 200px;
+  font-size: 19px;
+  color: white;
+  transition: 0.2s;
+  margin-top: 30px;
+}
+
+.add:hover{
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* create article */
+
+.modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000a2;
+}
+
+.modal .modal-content{
+  width: 900px;
+  background: #000;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.modal .modal-content h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.modal .modal-content span{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  background-image: linear-gradient(90deg,  #ff5aff, #7272ff);
+}
+
+.modal .modal-content label{
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.modal .modal-content input{
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.modal .modal-content button{
+  padding: 15px 20px;
+  width: 300px;
+  border: 1px solid rgb(76, 76, 76);
+  border-radius: 5px;
+  background: #000000;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal .modal-content button:hover{
+  background: white;
+  color: #333;
+}
+
+.error{
+  color: red;
+  font-size: 20px;
+}

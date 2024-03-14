@@ -1,0 +1,63 @@
+header{
+  height: 60px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(52, 52, 52);
+}
+
+header nav{
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .left{
+  display: flex;
+  align-items: center
+}
+
+header nav .left .logo{
+  font-size: 20px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+header nav .left  a{
+  text-decoration: none;
+  color: rgb(169, 169, 169);
+  margin-right: 15px;
+}
+
+header nav .right{
+  display: flex;
+  align-items: center;
+}
+
+header nav .right button{
+  padding: 10px 20px;
+  border: none;
+  background: #f50057;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+  margin-right: 20px;
+}
+
+header nav .right button:hover{
+  background: #ff83b1;
+}
+
+.moon{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+  header nav .right {
+    display: none;
+  }
+}
