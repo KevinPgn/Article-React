@@ -1,12 +1,13 @@
 import "./Navbar.css"
 import { FaMoon } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 export const Navbar = () => {
   return <>
     <header>
       <nav>
         <div className="left">
-          <div className="logo">CodeLine</div>
+          <Link to="/" className="logo">CodeLine</Link>
           <a href="">Explorer</a>
           <a href="">Customs</a>
         </div>
